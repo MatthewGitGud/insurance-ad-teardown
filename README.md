@@ -2,7 +2,7 @@
 
 A one-page teardown of the Meta (Facebook and Instagram) ads that PolicyMe and its competitors run in Canada. It covers which ad angles everyone leans on, which nobody uses, and three creative briefs for the biggest gaps.
 
-**Live site:** _add your GitHub Pages link here after publishing_
+**Live site:** https://matthewgitgud.github.io/insurance-ad-teardown/
 
 Built with plain HTML, CSS and JavaScript plus a few small Python scripts. No frameworks, no backend, no paid APIs. Everything on the page is generated from `data/ads.json`, so adding ads and rebuilding updates the whole page.
 
