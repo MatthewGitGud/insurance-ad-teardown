@@ -1,0 +1,15 @@
+# Raw collection files: saved Ad Library pages (can contain details of the
+# Facebook account that saved them), videos and frames. Large and not needed
+# by the site; data/ and screenshots/ hold everything the page uses.
+raw/
+
+# Personal working notes and local tool settings
+CLAUDE.md
+.claude/
+
+# Python / OS clutter
+__pycache__/
+*.pyc
+.DS_Store
+Thumbs.db
+desktop.ini

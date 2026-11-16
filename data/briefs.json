@@ -1,0 +1,47 @@
+[
+  {
+    "title": "Let the reviews lead",
+    "gap": "No brand opens an ad with social proof (0 of 149 ads). Yet 98 of 99 PolicyMe ads already carry “1,500+ reviews with a 4.85/5 rating”, buried in the post text below the hook.",
+    "objective": "Find out whether opening on customer proof lowers cost per application compared with PolicyMe's current UGC creative.",
+    "audience": "Couples and parents aged about 28 to 45: the people PolicyMe's couples-discount ads already reach.",
+    "worry": "“I’ve never heard of this company. Is buying life insurance online legit, and will they actually pay out?”",
+    "concepts": [
+      {"hook": "“1,500 Canadians rated us 4.85 out of 5. Here’s what they said.”", "visual": "Real review cards (first name, province, stars) stacking on screen one at a time.", "format": "Static carousel, or a 9:16 motion version"},
+      {"hook": "“I was nervous buying life insurance online. Then…”", "visual": "A real customer, with consent, telling the story to camera in the style of PolicyMe's existing creator ads, with the star rating as an overlay.", "format": "Video: UGC testimonial"},
+      {"hook": "“We read our worst reviews so you don’t have to.”", "visual": "An in-house advisor (the existing “Emil” format) reacting to real critical reviews and explaining what changed.", "format": "Video: talking head"}
+    ],
+    "test": "Keep the current couples-discount post text, audience and budget split. Change only the creative's opening (first 3 seconds, or the static headline) so the test isolates the hook.",
+    "metric": "Cost per completed application vs the control. Also watch cost per quote start and hook rate (3-second views ÷ impressions).",
+    "rule": "Give each concept about 2× the control's CPA in spend, or 50 quote starts. Kill it if CPA is 30%+ worse than the control at that point. Scale it (double the budget, move it into the main ad set) if CPA is 15%+ better and holds for 7 days."
+  },
+  {
+    "title": "Critical illness: “what if I get sick, not die?”",
+    "gap": "None of PolicyMe's 99 active ads promote critical illness. Canada Life leads 26 of its 43 insurance ads with “prepare for the unexpected” (serious illness, disability, lost income), and no other brand uses that angle.",
+    "objective": "Test critical illness as a second paid-social product line with PolicyMe's core audience.",
+    "audience": "Parents and couples aged 30 to 45 with a mortgage. Use a second cell to retarget people who got a term-life quote and didn't apply.",
+    "worry": "“If I get seriously sick and can’t work for a year, how do we pay the mortgage?”",
+    "concepts": [
+      {"hook": "“Life insurance pays if you die. What pays if you don’t?”", "visual": "Split screen of the same family: hospital bed on one side, kitchen table full of bills on the other.", "format": "Static, plus a 9:16 version"},
+      {"hook": "“My diagnosis wasn’t the scariest part. The bills were.”", "visual": "A real recovered patient, with consent, telling their story with burned-in captions, like PolicyMe's creator videos.", "format": "Video: UGC"},
+      {"hook": "“Critical illness insurance, explained in 30 seconds.”", "visual": "The advisor Q&A format PolicyMe already runs for health & dental, with the question in the search bar: “What does critical illness insurance actually pay for?”", "format": "Video: talking head"}
+    ],
+    "test": "Run it as its own campaign. Use the best current term-life ad for the same audience as a CPA benchmark, not a head-to-head, because the products convert differently.",
+    "metric": "Critical-illness CPA vs the term-life benchmark. In the retargeting cell, also track how often critical illness gets added to term applications.",
+    "rule": "Same rule as brief 1. Kill a concept at 30%+ above the benchmark CPA. Scale at or below the benchmark for 7 days. Before launch, take every product detail (price, covered conditions, payout) from PolicyMe's actual critical-illness product."
+  },
+  {
+    "title": "When work coverage ends",
+    "gap": "PolicyMe's 22 health & dental ads target the self-employed (7) or everyone (15). None speak to retirees or people leaving a job. Canada Life runs 4 ads on exactly that moment (“When work coverage ends”, “Coverage for your whole retirement journey”).",
+    "objective": "Reach people at the moment they lose group benefits, with PolicyMe's guaranteed-approval health plan as the answer.",
+    "audience": "Canadians aged 55 to 70 who are retiring, plus people changing or leaving jobs.",
+    "worry": "“My work benefits stop on my last day. Will anyone cover me, given my health history?”",
+    "concepts": [
+      {"hook": "“Your last day of work is your benefits’ last day too.”", "visual": "A retirement-party cake with a calendar countdown, then a phone showing a plan approved.", "format": "Static"},
+      {"hook": "“Retiring this year? Here’s what doesn’t retire with you.”", "visual": "Advisor Q&A with the search-bar question “Can I get health insurance after I retire?”", "format": "Video: talking head"},
+      {"hook": "“No health questions. Covered the same day.”", "visual": "A couple in their 60s at the kitchen table, then PolicyMe's existing “Approved!” card design.", "format": "Static"}
+    ],
+    "test": "Control: PolicyMe's current benefits-led health static (“$1,300/year for mental health”). Same budget and placements, with the audience narrowed to ages 55+.",
+    "metric": "CPA vs the control. Also compare CTR in the 55+ age bracket against the control's 55+ CTR.",
+    "rule": "Same rule as brief 1. The “no health questions” claim is taken from PolicyMe's own health ads (“Guaranteed approval, no health questions asked”), but check any age limits on the plan before targeting people over 55."
+  }
+]

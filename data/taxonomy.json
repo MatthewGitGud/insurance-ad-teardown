@@ -1,0 +1,62 @@
+{
+  "angles": [
+    {"key": "price_savings", "label": "Price / savings", "short": "Price", "definition": "Cheap, affordable, low monthly cost."},
+    {"key": "competitor_comparison", "label": "Competitor comparison", "short": "Compare", "definition": "Names or compares to other insurers."},
+    {"key": "speed_convenience", "label": "Speed / convenience", "short": "Speed", "definition": "Fast quote, online, no hassle."},
+    {"key": "no_medical_exam", "label": "No medical exam", "short": "No exam", "definition": "No exam or health questions; guaranteed acceptance."},
+    {"key": "family_protection", "label": "Family protection", "short": "Family", "definition": "Protecting kids or partner if something happens."},
+    {"key": "life_event", "label": "Life event", "short": "Life event", "definition": "New baby, mortgage, marriage, new home, retirement."},
+    {"key": "social_proof", "label": "Social proof", "short": "Social proof", "definition": "Reviews, ratings, customer counts."},
+    {"key": "trust_credibility", "label": "Trust / credibility", "short": "Trust", "definition": "Licensed, backed by a big insurer, awards."},
+    {"key": "myth_busting", "label": "Myth-busting", "short": "Myth-busting", "definition": "“Think it’s expensive? Think again.”"},
+    {"key": "offer_discount", "label": "Offer / discount", "short": "Offer", "definition": "A specific promo."},
+    {"key": "education", "label": "Education", "short": "Education", "definition": "Explains how insurance works."},
+    {"key": "coverage_gap", "label": "Coverage gap", "short": "Coverage gap", "definition": "What your current coverage (public, work or bank) doesn’t pay for.", "added": true},
+    {"key": "urgency", "label": "Urgency", "short": "Urgency", "definition": "Rates rise with age; stop putting it off.", "added": true},
+    {"key": "plan_benefits", "label": "Plan benefits", "short": "Benefits", "definition": "Leads with what the plan covers, such as benefit amounts.", "added": true},
+    {"key": "risk_protection", "label": "Risk protection", "short": "Risk", "definition": "Prepare for the unexpected: illness, disability, lost income.", "added": true}
+  ],
+  "audiences": [
+    {"key": "couples", "label": "Couples"},
+    {"key": "parents", "label": "Parents"},
+    {"key": "new_parents", "label": "New parents"},
+    {"key": "homeowners", "label": "Homeowners"},
+    {"key": "young_adults", "label": "Young adults"},
+    {"key": "self_employed", "label": "Self-employed"},
+    {"key": "seniors", "label": "Seniors"},
+    {"key": "general", "label": "General"},
+    {"key": "unclear", "label": "Unclear"}
+  ],
+  "products": [
+    {"key": "term_life", "label": "Term life"},
+    {"key": "critical_illness", "label": "Critical illness"},
+    {"key": "health_dental", "label": "Health & dental"},
+    {"key": "home_auto", "label": "Home & auto"},
+    {"key": "other", "label": "Other (disability, business)"},
+    {"key": "unclear", "label": "Product not named"}
+  ],
+  "formats": [
+    {"key": "static", "label": "Static"},
+    {"key": "carousel", "label": "Carousel"},
+    {"key": "video_ugc", "label": "Video: UGC"},
+    {"key": "video_talking_head", "label": "Video: talking head"},
+    {"key": "video_animated", "label": "Video: animated"},
+    {"key": "unclear", "label": "Video: not reviewed"}
+  ],
+  "proof": [
+    {"key": "reviews", "label": "Reviews"},
+    {"key": "price_table", "label": "Price table"},
+    {"key": "competitor_comparison", "label": "Competitor comparison"},
+    {"key": "awards", "label": "Awards"},
+    {"key": "customer_count", "label": "Customer count"},
+    {"key": "stat", "label": "Stat"},
+    {"key": "licensed_advisor", "label": "Licensed advisor"},
+    {"key": "none", "label": "None"}
+  ],
+  "languages": [
+    {"key": "en", "label": "English"},
+    {"key": "hi-en", "label": "Hinglish"},
+    {"key": "zh-Hant", "label": "Chinese (Traditional)"},
+    {"key": "zh-Hans", "label": "Chinese (Simplified)"}
+  ]
+}

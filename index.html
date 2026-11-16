@@ -1,0 +1,143 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Canadian Insurance Ad Teardown</title>
+  <meta name="description" content="A teardown of active Meta ads from Canadian insurance brands: which angles are overused, which are missing, and creative briefs for the biggest gaps.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,500..600;1,9..144,500..600&display=swap">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip" href="#findings">Skip to findings</a>
+
+  <header class="topbar">
+    <div class="wrap topbar-inner">
+      <a class="brandmark" href="#top">Ad Teardown</a>
+      <nav aria-label="Sections">
+        <a href="#findings">Findings</a>
+        <a href="#gaps">Gap map</a>
+        <a href="#longest">Longest-running</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#briefs">Briefs</a>
+        <a href="#method">Method</a>
+      </nav>
+      <a class="pill-btn" href="#gaps">See the gaps &rarr;</a>
+    </div>
+  </header>
+
+  <main id="top">
+    <section class="hero wrap">
+      <p class="badge">Meta Ad Library &middot; Canada</p>
+      <h1>Canadian Insurance Ad Teardown</h1>
+      <p class="lede">What PolicyMe and its competitors are running on Facebook and Instagram right now: which angles everyone leans on, which nobody uses, and three creative briefs to test the gaps.</p>
+      <div class="hero-cta">
+        <a class="pill-btn" href="#findings">Read the findings &rarr;</a>
+        <a class="ghost-btn" href="#gallery">Browse the ads</a>
+      </div>
+      <dl class="stats" id="stats" aria-live="polite"></dl>
+      <p class="hero-note" id="hero-note"></p>
+    </section>
+
+    <section id="findings" class="wrap section">
+      <h2>Key findings</h2>
+      <p class="section-intro">Each finding is computed from the tagged ads; the badge shows the count behind it.</p>
+      <ol class="findings" id="findings-list"></ol>
+    </section>
+
+    <section id="gaps" class="wrap section">
+      <h2>Gap map</h2>
+      <p class="section-intro">Each cell shows how many of a brand's ads <strong>lead with</strong> that angle (shaded by share of the brand's ads). Empty cells are gaps. Click a cell to see those ads in the gallery.</p>
+      <div class="toolbar" role="group" aria-label="What to count">
+        <button type="button" class="seg" data-mode="primary" aria-pressed="true">Lead angle</button>
+        <button type="button" class="seg" data-mode="any" aria-pressed="false">Any mention</button>
+      </div>
+      <p class="scroll-hint">Swipe the table sideways to see every angle.</p>
+      <div class="table-scroll">
+        <table class="heat" id="gap-map"></table>
+      </div>
+      <div class="legend" id="gap-legend" aria-hidden="true"></div>
+      <ul class="gap-callouts" id="gap-callouts"></ul>
+
+      <h3>Product &times; audience</h3>
+      <p class="section-intro">Who each product is pitched to. Counts are ads; shading is share of the ads shown.</p>
+      <div class="toolbar">
+        <label class="field">Brand
+          <select id="pa-brand"></select>
+        </label>
+      </div>
+      <div class="table-scroll">
+        <table class="heat heat-small" id="pa-grid"></table>
+      </div>
+    </section>
+
+    <section id="longest" class="wrap section">
+      <h2>Longest-running ads</h2>
+      <p class="section-intro">The three oldest active ads per brand. Advertisers usually keep paying for ads that work, so a long run is <em>likely</em> a performer. Meta doesn't show spend for Canadian commercial ads, so treat this as a signal, not proof.</p>
+      <div class="longest" id="longest-list"></div>
+    </section>
+
+    <section id="gallery" class="wrap section">
+      <h2>Ad gallery</h2>
+      <div class="filters" id="filters">
+        <label class="field">Brand <select data-filter="brand"></select></label>
+        <label class="field">Lead angle <select data-filter="primary_angle"></select></label>
+        <label class="field">Format <select data-filter="format"></select></label>
+        <label class="field">Product <select data-filter="product"></select></label>
+        <button type="button" class="link-btn" id="reset-filters">Reset</button>
+      </div>
+      <p class="result-count" id="result-count" aria-live="polite"></p>
+      <div class="cards" id="cards"></div>
+      <div class="more"><button type="button" class="btn" id="show-more">Show more</button></div>
+    </section>
+
+    <section id="briefs" class="wrap section">
+      <h2>Creative briefs</h2>
+      <p class="hypothesis-banner"><strong>Hypotheses, not results.</strong> These briefs are based only on public ads. They show where the gaps are, not what will win. Each one comes with a test plan to find out.</p>
+      <div class="briefs" id="briefs-list"></div>
+    </section>
+
+    <section id="method" class="wrap section">
+      <h2>How this was made</h2>
+      <ol class="steps">
+        <li><strong>Collect.</strong> Searched the Meta Ad Library (Canada, active ads) for each brand, scrolled to load results, and saved the page. Single ads were added as screenshots.</li>
+        <li><strong>Extract.</strong> A small Python script reads each saved page and pulls out the facts: library ID, start date, post text, headline, CTA, image or video.</li>
+        <li><strong>Tag with AI, using a fixed taxonomy.</strong> Claude viewed every creative (static images, and the first 3 seconds of PolicyMe's videos) and tagged product, format, angle, audience, offer and proof. Tags had to come from a fixed list. Anything not visible was marked unclear rather than guessed.</li>
+        <li><strong>Human review.</strong> I reviewed the tags, approved four new angles where ads didn't fit the list, and excluded ads that weren't insurance or were outside PolicyMe's market.</li>
+        <li><strong>Build.</strong> A build script merges facts and tags into one <code>ads.json</code>. This page reads that file, so adding ads and re-running updates everything.</li>
+      </ol>
+      <div class="method-grid">
+        <div>
+          <h3>What was collected</h3>
+          <ul class="sources" id="sources-list"></ul>
+        </div>
+        <div>
+          <h3>Limits</h3>
+          <ul class="plain">
+            <li>Meta shows no spend or results for Canadian commercial ads. Ad longevity is a signal, not proof of performance.</li>
+            <li>The Ad Library loads results as you scroll, so each brand's sample is the ads that had loaded when the page was saved, not every active ad.</li>
+            <li id="limit-videos"></li>
+            <li>Tags are judgment calls made with a fixed list. The reasoning for each one is in that ad's notes in the gallery.</li>
+          </ul>
+        </div>
+      </div>
+      <h3>How it could run on autopilot</h3>
+      <p>The pipeline is already split into steps a scheduler could run weekly: save each brand's Ad Library page, extract, fetch new video media before the links expire, and send only new library IDs for tagging. Comparing each week's IDs against the last would show which ads launched, which stopped, and which keep running. That gives a growth team a live competitor feed instead of a one-off snapshot.</p>
+      <details class="taxonomy">
+        <summary>The angle taxonomy</summary>
+        <dl id="taxonomy-list"></dl>
+      </details>
+    </section>
+  </main>
+
+  <footer class="footer wrap">
+    <p><strong>An independent portfolio project.</strong> Not affiliated with or endorsed by PolicyMe or any brand shown. Ad creatives belong to their owners.</p>
+    <p>Built with plain HTML, CSS and JavaScript from public Meta Ad Library data.</p>
+  </footer>
+
+  <div class="tooltip" id="tooltip" role="tooltip" hidden></div>
+  <script src="app.js" defer></script>
+</body>
+</html>

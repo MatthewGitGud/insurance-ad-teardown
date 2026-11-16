@@ -1,0 +1,30 @@
+[
+  {
+    "brand": "PolicyMe",
+    "extracted": "data/extracted/policyme.json",
+    "raw_dir": "raw/policyme",
+    "collected": "2026-11-15",
+    "search": "Keyword 'policyme', country CA, active ads, sorted by total impressions. The page reported ~130 results; 99 had loaded when it was saved."
+  },
+  {
+    "brand": "PolicyAdvisor",
+    "extracted": "data/extracted/policyadvisor.json",
+    "raw_dir": "raw/policyadvisor",
+    "collected": "2026-11-15",
+    "search": "PolicyAdvisor's advertiser page, country CA, active ads, sorted by total impressions. The page reported ~19 results; 12 had loaded when it was saved."
+  },
+  {
+    "brand": "BMO",
+    "extracted": "data/extracted/bmo.json",
+    "raw_dir": "raw/bmo",
+    "collected": "2026-11-15",
+    "search": "BMO Financial Group's page, country CA, active ads, sorted by total impressions. The page reported ~290 results; 69 had loaded. None of the 69 were insurance ads."
+  },
+  {
+    "brand": "Canada Life",
+    "extracted": "data/extracted/canadalife.json",
+    "raw_dir": "raw/canadalife",
+    "collected": "2026-11-15",
+    "search": "Canada Life Co's page, country CA, active ads, sorted by total impressions. The page reported ~640 results; 65 had loaded. 15 investment/savings ads were excluded."
+  }
+]
